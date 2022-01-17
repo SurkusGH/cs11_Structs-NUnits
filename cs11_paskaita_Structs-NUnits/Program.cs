@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace cs11_paskaita_Structs_NUnits
 {
-    class Program
+    public class Program
     {
         #region TEORIJA - YouTube
 
@@ -152,12 +152,23 @@ namespace cs11_paskaita_Structs_NUnits
             //Problem1();
             //Problem2();
             //Problem3();
-            Problem4();
+            //Problem4();
             //Problem5();
             //Problem6();
             //Problem7();
             //Problem8();
+            //Problem9("Labas");
+            Problem10_12.Problem10("Labas");
+            Problem10_12.Problem11(10);
+            //Problem12();
 
+
+            #region TEORIJA - NUnit
+            // Tai kodo parašymas, tam kad būtų ištestuotas kitas kodas
+            // Sukurtų testų paleidimas automatiniu būdu
+            // 
+
+            #endregion
         }
 
         public static void Problem1()
@@ -248,7 +259,7 @@ namespace cs11_paskaita_Structs_NUnits
                 Console.WriteLine(item);
             }
             
-        }
+        } 
 
     }
 }
