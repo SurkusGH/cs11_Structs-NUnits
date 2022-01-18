@@ -55,14 +55,15 @@ namespace TestProject1
             string word1 = Problem10_12.Problem10("Labas");
             string word2 = Problem10_12.Problem10("a");
             string word3 = Problem10_12.Problem10("");
-            // Act
 
+            // Act
             char[] chars1 = word1.ToCharArray();
             Array.Reverse(chars1);
             char[] chars2 = word2.ToCharArray();
             Array.Reverse(chars2);
             char[] chars3 = word3.ToCharArray();
             Array.Reverse(chars3);
+
             // Asert
             Assert.Equal("sabaL", word1);
             Assert.Equal("a", word2);
