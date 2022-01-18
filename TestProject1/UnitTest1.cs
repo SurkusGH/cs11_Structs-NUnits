@@ -68,7 +68,31 @@ namespace TestProject1
             Assert.Equal("sabaL", word1);
             Assert.Equal("a", word2);
             Assert.Equal("", word3);
+        }
 
+        [Fact]
+        public void Test_If_Input_Even_Number()
+        {
+            // Arrange
+            int num1 = 10;
+            int num2 = 9;
+            int num3 = 8;
+            int num4 = 7;
+            int num5 = 6;
+
+            // Act
+            Problem10_12.Problem11(num1); //
+            Problem10_12.Problem11(num2); //
+            Problem10_12.Problem11(num3); // <-- Tai šita dalis dėl grožio tuomet
+            Problem10_12.Problem11(num4); //     bool testuojasi kitokia struktūra?
+            Problem10_12.Problem11(num5); //
+
+            // Assert
+            Assert.True(Problem10_12.Problem11(num1));
+            Assert.False(Problem10_12.Problem11(num2));
+            Assert.True(Problem10_12.Problem11(num3));
+            Assert.False(Problem10_12.Problem11(num4));
+            Assert.True(Problem10_12.Problem11(num5));
         }
     }
 }
